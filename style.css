@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Inter-Light;
+  src: url(./fonts/Inter-Light.ttf);
+}
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+@media only screen and (max-width: 600px) {
+  .codingBootcamp-wrapper {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 300;
+    /* font-weight: 500;
+    font-weight: 700; */
+    height: 100%;
+  }
+  .bootcamp-image-holder {
+    padding: 3rem;
+    margin: 1rem;
+    background-image: url(./images/pattern-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bootcamp-image {
+    border-radius: 15px;
+    width: 17rem;
+    padding: 0rem;
+    margin: 0;
+  }
+  .bootcamp-arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    width: 5rem;
+    margin-top: -1rem;
+  }
+  .bootcamp-arrow {
+    cursor: pointer;
+    width: 0.5rem;
+  }
+  .bootcamp-text {
+    font-family: Inter-Light;
+    font-size: large;
+    font-weight: 100 !important;
+    text-align: center;
+    padding: 1.7rem;
+    color: var(--Dark-Blue);
+    background-image: url(./images/pattern-quotes.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 3.5rem;
+    height: 12rem;
+  }
+  .writer {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: medium;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.7rem;
+    color: var(--Dark-Blue);
+  }
+  .post-writer {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: medium;
+    font-weight: 700;
+    text-align: center;
+    color: var(--Grayish-Blue);
+  }
+  .box {
+    background-image: url(./images/pattern-curve.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .codingBootcamp-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
+  .bootcamp-image-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+  .boot-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6rem;
+  }
+  .bootcamp-image {
+    border-radius: 5px;
+  }
+  .bootcamp-arrows {
+    display: flex;
+    margin-right: 20rem;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 7rem;
+    margin-top: -1.5rem;
+    box-shadow: 0 0 15px 1px rgb(197, 188, 188);
+  }
+  .bootcamp-arrow {
+    cursor: pointer;
+    width: 0.8rem;
+  }
+  .bootcamp-text-wrapper {
+    margin-top: 10rem;
+    width: 40%;
+    overflow: visible;
+  }
+  .bootcamp-text {
+    width: 50rem;
+    padding-left: 10rem;
+    overflow: visible;
+    font-family: Inter-Light;
+    font-size: xx-large;
+    font-weight: 100 !important;
+    color: var(--Dark-Blue);
+    background-image: url(./images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 6rem 0rem 2rem 0rem;
+  }
+  .writer {
+    display: inline;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-left: 10rem !important;
+    font-size: large;
+    font-weight: 700;
+    color: var(--Dark-Blue);
+  }
+  .post-writer {
+    display: inline;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: large;
+    font-weight: 700;
+    color: var(--Grayish-Blue);
+  }
+  .box {
+    background-image: url(./images/pattern-curve.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 5rem;
+    height: 10rem;
+  }
+}
